@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geovisualization Dashboard</title>
+    <link rel="stylesheet" href="assignment2css.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Geovisualization Dashboard</h1>
+        <p>Median Income and FTE by province, gender and age group</p>
+    </header>
+
+    <nav class="controls" aria-label="Controls">
+     <label>Province <select id="provinceSelect"></select></label>
+     <label>Year <select id="yearSelect"></select></label>
+     <label>Sex <select id="sexSelect">
+        <option value="All">All</option>
+        <option value="F">Female</option>
+        <option value="M">Male</option>
+      </select>
+    </label>
+    <button id="resetBtn" type="button">Reset filters</button>
+  </nav>
+
+   <main class="dashboard">
+    <p id="status" role="status">Loading data...</p>
+
+    <section class="indicators" aria-label="Summary indicators">
+      <article class="indicator">
+        <h2>Total FTE</h2>
+        <p id="indicatorFte" class="value">-</p>
+        <small>Full-time equivalents for the current filters</small>
+      </article>
+      <article class="indicator">
+        <h2>Gender income gap</h2>
+        <p id="indicatorGap" class="value">-</p>
+        <small>How much less women earn than men (FTE-weighted median income)</small>
+      </article>
+    </section>
+
+    <section class="panel wide"><div class="chart-box"><canvas id="lineChart"></canvas></div></section>
+    <section class="panel"><div class="chart-box"><canvas id="barChart"></canvas></div></section>
+    <section class="panel"><div class="chart-box"><canvas id="doughnutChart"></canvas></div></section>
+  </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="assignment2js.js"></script>
+</body>
+</html>
+   
