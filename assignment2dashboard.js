@@ -92,8 +92,8 @@ function groupBy(rows, key) {
 
 /*Creating the charts*/
 const INCOME = 'Median income'; 
-const COLORS = { F: '#c4472f', M: '#0b5d46', base: '#9fb8ae', highlight: '#c98a1b',
-                 palette: ['#0b5d46', '#c98a1b', '#c4472f', '#4a6fa5', '#7d8f69'] };
+const COLORS = { F: '#42e1e1', M: '#0d2593', base: '#61688e', highlight: '#4b349e',
+                 palette: ['#309598', '#56B4E9', '#00329f', '#3667af', '#211cb4'] };
 const charts = {};
 
 function render(id, config) {

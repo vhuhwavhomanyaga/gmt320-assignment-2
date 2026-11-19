@@ -3,9 +3,9 @@
   --ink: #16231f;
   --paper: #f5f3ee;
   --panel: #ffffff;
-  --green: #4d0b5d;
+  --darkblue: #040134;
   --ochre: #1b55c9;
-  --line: #cad9d8;
+  --line: #a9fcf6;
 }
 * { box-sizing: border-box; }
 body { margin: 0; 
@@ -14,7 +14,7 @@ body { margin: 0;
     font-family: system-ui, "Segoe UI", sans-serif; 
     line-height: 1.5; }
 
-.site-header { background: var(--green); 
+.site-header { background: var(--darkblue); 
     color: #fff; padding: 1.5rem clamp(1rem, 4vw, 3rem); }
 .site-header h1 { margin: 0 0 .25rem; 
     font-family: Georgia, "Times New Roman", serif; 
@@ -29,7 +29,7 @@ body { margin: 0;
     align-items: end; 
     padding: 1rem clamp(1rem, 4vw, 3rem); 
     background: #fff; 
-    border-bottom: 2px solid var(--ochre); }
+    border-bottom: 2px solid var(--darkblue); }
 .controls label { display: flex; 
     flex-direction: column; 
     font-size: .85rem; 
@@ -42,7 +42,7 @@ select, button { font: inherit;
 button { background: var(--ink); 
     color: #fff; 
     cursor: pointer; }
-select:focus-visible, button:focus-visible { outline: 3px solid var(--ochre); 
+select:focus-visible, button:focus-visible { outline: 3px solid var(--darkblue); 
     outline-offset: 2px; }
 
 .dashboard { display: grid; 
@@ -57,7 +57,7 @@ select:focus-visible, button:focus-visible { outline: 3px solid var(--ochre);
     grid-template-columns: repeat(2, 1fr); 
     gap: 1rem; }
 .indicator { background: var(--panel); 
-    border-left: 6px solid var(--ochre); 
+    border-left: 6px solid var(--darkblue); 
     padding: 1rem 1.25rem; }
 .indicator h2 { margin: 0; 
     font-size: 1rem; }
