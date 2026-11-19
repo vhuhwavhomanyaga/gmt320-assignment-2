@@ -13,7 +13,7 @@ File used : Province_MedianIncome_Youth_Sex.csv
 
 1. Clone the repository
 2. Open the folder in VS Code and start the Live Server extension
-3. Open 'assignment2.html' in the browser by right clicking and opening with the live server
+3. Open 'index.html' in the browser by right clicking and opening with the live server
 
 # Author
 
